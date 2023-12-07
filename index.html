@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./src/images/icon-pomodoro.jpg">
+  <link rel="stylesheet" href="./preformato.css">
+  <link rel="stylesheet" href="./index.css">
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+  <script src="./index.js"></script>  <title>25+5 Countdown</title>
+</head>
+<body>
+  <div id="container">
+    <div id="title">Countdown clock</div>
+    <div id="break" class="box">
+      <div id="break-label" class="box-label">Break length</div>
+      <div id="break-decrement" class="box-decrement">
+        <img class="button" src="./src/images/chevron-down-solid.svg" alt="">
+      </div>
+      <div id="break-length" class="box-length"></div>
+      <div id="break-increment" class="box-increment">
+        <img class="button" src="./src/images/chevron-up-solid.svg" alt="">
+      </div>
+    </div>
+    <div id="session" class="box">
+      <div id="session-label" class="box-label">Session length</div>
+      <div id="session-decrement" class="box-decrement">
+        <img class="button" src="./src/images/chevron-down-solid.svg" alt="">
+      </div>
+      <div id="session-length" class="box-length"></div>
+      <div id="session-increment" class="box-increment">
+        <img class="button" src="./src/images/chevron-up-solid.svg" alt="">
+      </div>
+    </div>
+    <div id="timer" class="box">
+      <div id="timer-label" class="box-label"></div>
+      <div id="time-left" class="box-length"></div>
+    </div>
+    <div id="buttons">
+      <div class="controls" id="start_stop">
+        <img class="button" src="./src/images/play-solid.svg" alt="">
+        <img class="button" src="./src/images/pause-solid.svg" alt="">
+        <p>play/pause</p>
+      </div>
+      <div class="controls" id="reset">
+        <img class="button" src="./src/images/undo-solid.svg" alt="">
+        <p>reset clock</p>
+      </div>
+    </div>
+  </div>
+  <audio id="beep" src="./src/sounds/alarm.mp3" type="audio/mpeg"></audio>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
